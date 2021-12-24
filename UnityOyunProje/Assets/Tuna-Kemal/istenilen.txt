@@ -1,0 +1,9 @@
+Arka plan lardan birini ekleyin tam telefon boyutunda değil sağına telefon alanına gelecek 
+şekilde bir renk bırakın o bölmenin içine varlıkları bırakın arka planda gelmesi gereken yerleri
+oraya oturacak şekilde siyahımsı birşey koyun onun üstüne geldiğinde üstüne otursun
+hepsi oturduğunda successful ekranı gelsin ve diğer bölüme geçsin geçerken bir animasyon ile 
+geçmesini istiyorum çocuksu bir animasyon kullanın çocuk oyunu çünkü. 
+demo sürümü grafiksel olarak kötü olmasına takılmayın kodsal mantığı oturtun diye yapıyoruz bittiğinde 
+tasarımlar gelmiş olacak gerçek tasarımlar ile başlıcaz 
+
+hepinize iyi çalışmalar diliyorum
