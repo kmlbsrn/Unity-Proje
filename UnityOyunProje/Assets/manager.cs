@@ -4,19 +4,22 @@ using UnityEngine;
 
 public class manager : MonoBehaviour
 {
-    public GameObject chair, blocks, jar, toyCar, varlik,
-        k_chair, k_blocks, k_jar, k_toyCar, k_varlik;
+
+    public GameObject chair, blocks, jar, toyCar, varlik, giraffe,
+        k_chair, k_blocks, k_jar, k_toyCar, k_varlik, k_giraffe;
 
     Vector2 chairInitialPos, blocksInitialPos, jarInitialPos,
-            toyCarInitialPos, varlikInitialPos;
+            toyCarInitialPos, varlikInitialPos, giraffeInitialPos;
 
      void Start()
     {
+
         chairInitialPos = chair.transform.position;
         blocksInitialPos = blocks.transform.position;
         jarInitialPos = jar.transform.position;
         toyCarInitialPos = toyCar.transform.position;
         varlikInitialPos = varlik.transform.position;
+        giraffeInitialPos = giraffe.transform.position;
     }
 
     //Tutma
@@ -46,6 +49,12 @@ public class manager : MonoBehaviour
         varlik.transform.position = Input.mousePosition;
     }
 
+    public void DragGiraffe()
+    {
+        giraffe.transform.position = Input.mousePosition;
+    }
+
+
     //Bırakma
 
     public void DropChair()
@@ -55,6 +64,7 @@ public class manager : MonoBehaviour
         if (distance<50)
         {
             chair.transform.position = k_chair.transform.position;
+            
         }
         else
         {
@@ -69,6 +79,7 @@ public class manager : MonoBehaviour
         if (distance < 50)
         {
             blocks.transform.position = k_blocks.transform.position;
+            
         }
         else
         {
@@ -83,6 +94,7 @@ public class manager : MonoBehaviour
         if (distance < 50)
         {
             jar.transform.position = k_jar.transform.position;
+            
         }
         else
         {
@@ -97,6 +109,7 @@ public class manager : MonoBehaviour
         if (distance < 50)
         {
             toyCar.transform.position = k_toyCar.transform.position;
+            
         }
         else
         {
@@ -111,11 +124,34 @@ public class manager : MonoBehaviour
         if (distance < 50)
         {
             varlik.transform.position = k_varlik.transform.position;
+            
         }
         else
         {
             varlik.transform.position = varlikInitialPos;
         }
     }
+
+
+    public void DropGiraffe()
+    {
+        float distance = Vector3.Distance(giraffe.transform.position,
+            k_giraffe.transform.position);
+        if (distance < 50)
+        {
+            giraffe.transform.position = k_giraffe.transform.position;
+            
+        }
+        else
+        {
+            giraffe.transform.position = giraffeInitialPos;
+        }
+    }
+    
+   
+
+	
+    
+
 
 }
